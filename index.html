@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading a secret gift...</p>
+    </div>
+
+    <div id="landing-page" class="hidden">
+        <div class="landing-content">
+            <h1>Welcome to my birthday greetings! ✨</h1>
+            <button id="btn-open">Mở quà ngay!!! 🎁</button>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="nhac.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-control">🔇</button>
+
+    <main id="main-content" class="hidden">
+        <section class="section countdown">
+            <h2> The day the princess was born ... </h2>
+            <div id="timer"> 19 năm = 6940 ngày = 166560 giờ = 599616000 giây ha a </div>
+        </section>
+
+        <section class="section timeline">
+            <h2>Tệp ảnh sưu tập được á</h2>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="image\z7442310319272_938e9785029f2a3121a2cb847f3fba50.jpg"><p class="caption">Bạng thấy công sức tìm ảnh cụa mìn chất lượng khong :V</p></div>
+                    <div class="slide"><img src="image\z7442310308513_7954241dd04d1043e8c317fb5658a06a.jpg"><p class="caption">Bonus thêm 1 cái nựa lè.</p></div>
+                    <div class="slide"><img src="image\z7442310308051_05e3429608c627f549384508d5154775.jpg"><p class="caption">Ai đây nhề a nhề</p></div>
+                    <div class="slide"><img src="image\z7442310291949_331c47411eb167354877ae68e878b05f.jpg"><p class="caption">E chụp đẹp khả lăng cao cx là do mẫu ảnh đẹp a ậ</p></div>
+                    <div class="slide"><img src="image\z7442310290186_aaaea4d6c6edcc86e1dbd31872bf86a1.jpg"><p class="caption">Ảnh nì chắc cx lâu ròi tại hqua tìm ms thấy</p></div>
+                    <div class="slide"><img src="image\z7442310272984_5598fac29cc6e69685594caa3950d59e.jpg"><p class="caption">Ai mượn a bắt e share</p></div>
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+        
+        <section class="section gifts">
+            <h2>Lời chúc cụa tớ</h2>
+            <div class="gift-container">
+                <div class="gift-box" data-wish="Chúc mừng cạu đã đạt đến 1 cột mốc mới trong năm nay nè">🎁</div>
+                <div class="gift-box" data-wish="Chúc cạu vạn sự như ý nè">🎁</div>
+                <div class="gift-box" data-wish="Chúc cạu mau giàu để bao mì đi ăn nè">🎁</div>
+                <div class="gift-box" data-wish="Chúc cạu đạt đc mục tiêu đặt ra trong năm nay nè">🎁</div>
+                <div class="gift-box" data-wish="Chúc cạu tết này chụp đc nhiều ảnh ưng ý nhóe">🎁</div>
+            </div>
+            <div id="wish-container"></div>
+        </section>
+
+        <section class="section cake-area">
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="cake-bottom"></div>
+                    <div class="cake-middle"></div>
+                    <div class="cake-top"></div>
+                    <div class="icing"></div>
+                    <div class="cherry"></div>
+                    <div class="candle">
+                        <div class="flame" id="flame"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Click vào ngọn lửa ấy nhóe, để thổi nến và nhận điều ước nha mom     </p>
+        </section>
+
+        <div id="final-wish-container"></div>
+
+        <div id="final-wish-popup" class="hidden">
+            <div class="popup-content">
+                <h2>✨ Điều ước của bạn đã thành hiện thực! ✨</h2>
+                <div id="final-wish-text">
+                    <p>Chúc mừng cạu đã hoàn thành năm 18 tuổi 1 cách trọn vẹn nhóe. Tốt nghiệp cấp 3 nè, đỗ đh nè, có bộ ảnh kỉ yếu peak zl nè. Quá là nhiều sự kiện trọng đại đi mà. Nên là, mong cta vx coàn chơi vs nhao trong tương lai xa và chứng kiến thành's công trong nhx năm tới nhóe !!!</p>
+                    <p>Mãi là bạn tốt! ❤️</p>
+                    <p>P/s: muốn thay đổi j ib mìn mìn làm theo yêu cầu nha bạng </p>
+                </div>
+                <button id="btn-close-popup">Đóng & Lưu lại kỷ niệm 💖</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
